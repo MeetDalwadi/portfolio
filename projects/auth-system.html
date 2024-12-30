@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication System - Meet Dalwadi</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-showcase {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .project-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .project-header h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .project-header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            margin: 2rem 0;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .project-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .detail-section {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 15px;
+        }
+
+        .detail-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 2rem;
+            left: 2rem;
+            padding: 0.8rem 1.5rem;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 30px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .project-details {
+                grid-template-columns: 1fr;
+            }
+
+            .back-button {
+                top: 1rem;
+                left: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
+    </a>
+
+    <div class="project-showcase">
+        <div class="project-header">
+            <h1><i class="fas fa-lock"></i> Authentication Login System</h1>
+            <p>A secure Java web application built with Jakarta EE that implements user authentication with email verification.</p>
+        </div>
+
+        <div class="video-container">
+            <!-- Replace 'demo.mp4' with your actual video file -->
+            <video controls>
+                <source src="Project1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="project-details">
+            <div class="detail-section">
+                <h2><i class="fas fa-star"></i> Key Features</h2>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> User email verification system</li>
+                    <li><i class="fas fa-check-circle"></i> Secure token-based verification</li>
+                    <li><i class="fas fa-check-circle"></i> SMTP email integration with Gmail</li>
+                    <li><i class="fas fa-check-circle"></i> Real-time active user tracking</li>
+                    <li><i class="fas fa-check-circle"></i> Admin dashboard with user analytics</li>
+                </ul>
+            </div>
+
+            <div class="detail-section">
+                <h2><i class="fas fa-shield-alt"></i> Security Features</h2>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Secure random token generation</li>
+                    <li><i class="fas fa-check-circle"></i> SQL injection prevention</li>
+                    <li><i class="fas fa-check-circle"></i> TLS-enabled SMTP connection</li>
+                    <li><i class="fas fa-check-circle"></i> Prepared statements for database queries</li>
+                </ul>
+            </div>
+
+            <div class="detail-section">
+                <h2><i class="fas fa-code"></i> Technologies Used</h2>
+                <div class="tech-stack">
+                    <span class="tech-tag"><i class="fab fa-java"></i> Java</span>
+                    <span class="tech-tag"><i class="fas fa-server"></i> Jakarta EE</span>
+                    <span class="tech-tag"><i class="fas fa-box"></i> Maven</span>
+                    <span class="tech-tag"><i class="fas fa-database"></i> MySQL 8.3.0</span>
+                    <span class="tech-tag"><i class="fas fa-envelope"></i> Jakarta Mail</span>
+                    <span class="tech-tag"><i class="fas fa-tools"></i> PHPMyAdmin</span>
+                    <span class="tech-tag"><i class="fas fa-server"></i> Apache Tomcat</span>
+                </div>
+            </div>
+
+            <div class="detail-section">
+                <h2><i class="fas fa-link"></i> Project Links</h2>
+                <div class="project-links">
+                    <a href="https://github.com/MeetDalwadi/LoginHere" target="_blank" class="btn">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>

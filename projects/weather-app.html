@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - Meet Dalwadi</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-showcase {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .project-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .project-header h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .project-header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            margin: 2rem 0;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .project-details {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .detail-section {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 15px;
+        }
+
+        .detail-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 2rem;
+            left: 2rem;
+            padding: 0.8rem 1.5rem;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 30px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .setup-section {
+            margin-top: 2rem;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+        }
+
+        .setup-section h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .setup-steps {
+            list-style: none;
+            padding: 0;
+        }
+
+        .setup-steps li {
+            margin: 1rem 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .setup-steps i {
+            color: var(--primary-color);
+            margin-top: 0.3rem;
+        }
+
+        @media (max-width: 768px) {
+            .project-details {
+                grid-template-columns: 1fr;
+            }
+
+            .back-button {
+                top: 1rem;
+                left: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
+    </a>
+
+    <div class="project-showcase">
+        <div class="project-header">
+            <h1><i class="fas fa-cloud-sun"></i> Weather App</h1>
+            <p>A modern and responsive weather application that provides real-time weather information for any location worldwide.</p>
+        </div>
+
+        <div class="video-container">
+            <video controls>
+                <source src="Project2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="project-details">
+            <div class="detail-section">
+                <h2><i class="fas fa-star"></i> Key Features</h2>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Real-time weather data display</li>
+                    <li><i class="fas fa-check-circle"></i> Global city search functionality</li>
+                    <li><i class="fas fa-check-circle"></i> Detailed weather conditions</li>
+                    <li><i class="fas fa-check-circle"></i> Temperature and humidity data</li>
+                </ul>
+            </div>
+
+            <div class="detail-section">
+                <h2><i class="fas fa-laptop-code"></i> Technical Features</h2>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Responsive design</li>
+                    <li><i class="fas fa-check-circle"></i> API integration</li>
+                    <li><i class="fas fa-check-circle"></i> Clean user interface</li>
+                    <li><i class="fas fa-check-circle"></i> Cross-browser compatibility</li>
+                </ul>
+            </div>
+
+            <div class="detail-section">
+                <h2><i class="fas fa-code"></i> Technologies Used</h2>
+                <div class="tech-stack">
+                    <span class="tech-tag"><i class="fab fa-html5"></i> HTML5</span>
+                    <span class="tech-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                    <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
+                    <span class="tech-tag"><i class="fas fa-cloud"></i> OpenWeatherMap API</span>
+                </div>
+            </div>
+
+            <div class="detail-section">
+                <h2><i class="fas fa-link"></i> Project Links</h2>
+                <div class="project-links">
+                    <a href="https://github.com/MeetDalwadi/weather-app" target="_blank" class="btn">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="setup-section">
+            <h3><i class="fas fa-cogs"></i> Setup Instructions</h3>
+            <ul class="setup-steps">
+                <li>
+                    <i class="fas fa-1"></i>
+                    <div>
+                        <strong>Clone the repository:</strong><br>
+                        <code>git clone https://github.com/MeetDalwadi/weather-app.git</code>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-2"></i>
+                    <div>
+                        <strong>Navigate to project directory:</strong><br>
+                        <code>cd weather-app</code>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-3"></i>
+                    <div>
+                        <strong>Open in browser:</strong><br>
+                        Open index.html in your preferred web browser
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-4"></i>
+                    <div>
+                        <strong>API Setup:</strong><br>
+                        Sign up at OpenWeatherMap and replace the API key in script.js
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
